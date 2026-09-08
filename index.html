@@ -1,0 +1,125 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Beatrice Fini — Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            background: #f2f2f2;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            height: 60px;
+            padding: 0 24px;
+            background: white;
+            border-bottom: 1px solid #ddd;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .name {
+            font-size: 14px;
+            letter-spacing: 0.03em;
+        }
+
+        .button {
+            color: black;
+            text-decoration: none;
+            border: 1px solid black;
+            padding: 8px 14px;
+            font-size: 12px;
+            transition: all 0.2s ease;
+        }
+
+        .button:hover {
+            background: black;
+            color: white;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 1400px;
+            height: 100%;
+            border: none;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        @media (max-width: 600px) {
+            header {
+                height: 55px;
+                padding: 0 15px;
+            }
+
+            .name {
+                font-size: 12px;
+            }
+
+            main {
+                padding: 0;
+            }
+
+            iframe {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="name">
+            BEATRICE FINI — PORTFOLIO
+        </div>
+
+        <a
+            class="button"
+            href="FINI.BEATRICE_CV.pdf"
+            target="_blank"
+        >
+            OPEN PDF ↗
+        </a>
+
+    </header>
+
+    <main>
+
+        <iframe
+            src="FINI.BEATRICE_CV.pdf"
+            title="Beatrice Fini Portfolio">
+        </iframe>
+
+    </main>
+
+</body>
+</html>
+```
